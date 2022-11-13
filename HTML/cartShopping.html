@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="../CSS/category.css" /> -->
+		<link rel="stylesheet" href="../CSS/cartShopping.css" />
+		<link rel="stylesheet" href="../CSS/navbar.css" />
+		<link rel="stylesheet" href="../CSS/bootstrap/css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>Shopping Cart</title>
+	</head>
+	<body>
+		<!-- Awal Navbar -->
+		<nav class="navBar">
+			<div class="navBar-container">
+				<div class="navBar-webTitle">
+					<a href="../index.html#home">Aesthesion<span>.</span></a>
+				</div>
+				<ul class="navBar-navigation">
+					<li class="navBar-item"><a href="../index.html#home">Home</a></li>
+					<li class="navBar-item"><a href="../index.html#about">About</a></li>
+					<li class="navBar-item">
+						<a href="../index.html#category">Category</a>
+					</li>
+					<li class="navBar-item"><a href="../index.html#shop">Shop</a></li>
+				</ul>
+				<div class="nav-sign">
+					<button class="signUp-btn">
+						<a href="login.html" target="_self">Sign In</a>
+					</button>
+				</div>
+				<div class="navBar-burger-btn">
+					<div class="burger-line"></div>
+				</div>
+			</div>
+			<div class="gambar">
+				<img src="../IMG/shopping-cart.png" alt="" width="35" />
+				<span class="cartTotal"></span>
+			</div>
+		</nav>
+		<!-- Akhir Navbar -->
+
+		<!-- Awal Section -->
+		<section class="cartShopping">
+			<div class="listCartItems">
+				<!-- <div class="boxCartItem">
+					<div class="product">
+						<div class="imgItems">
+							<img src="../IMG/child/jacket.png" alt="" />
+						</div>
+						<div class="detailDesc">
+							<h3 class="title">Item 1</h3>
+							<p class="shortDesc">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+							<span class="basePrice"
+								>Rp. <span class="number">1000</span>K</span
+							>
+						</div>
+					</div>
+					<div class="totalItem">
+						<div class="countItem">
+							<img src="../IMG/minus.png" alt="" srcset="" class="minus" />
+							<span>1</span>
+							<img src="../IMG/plus.png" alt="" srcset="" class="plus" />
+						</div>
+						<span class="subTotalPerItem"
+							>Rp.<span class="number">599</span>K</span
+						>
+					</div>
+				</div> -->
+			</div>
+			<div class="boxTotalAndAddress">
+				<div class="boxPrice">
+					<div class="subTotalPrice">
+						<span>Subtotal</span>
+						<span class="valuePrice">RP. <span class="number">0</span></span>
+					</div>
+					<div class="tax">
+						<span>PPN (10%)</span>
+						<span class="valuePrice">RP. <span class="number">0</span></span>
+					</div>
+					<div class="total">
+						<span>Total Harga</span>
+						<span class="valuePrice">RP. <span class="number">0</span></span>
+					</div>
+				</div>
+				<button class="checkOut">Check Out</button>
+			</div>
+		</section>
+		<!-- Akhir Section -->
+
+		<script src="../JS/cart.js"></script>
+		<script src="../JS/navbar.js"></script>
+	</body>
+</html>

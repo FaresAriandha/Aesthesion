@@ -1,0 +1,168 @@
+=======================
+===== ini HTML NYA =====
+=======================
+
+<nav>
+			<div class="logo">
+				<h1>Brand</h1>
+			</div>
+
+			<ul class="navigation">
+				<li><a href="#about">About</a></li>
+				<li><a href="#category">Categories</a></li>
+				<li><a href="#shop">Shop</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+
+			<div class="gambar">
+				<img src="../IMG/shopping-cart.png" alt="" width="35" />
+				<span class="cartTotal">100</span>
+			</div>
+		</nav>
+
+
+
+
+
+
+
+
+
+
+=======================
+===== ini CSS NYA =====
+=======================
+nav {
+	min-width: 100vw;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	border-bottom: 1px solid black;
+}
+
+nav .logo {
+	width: fit-content;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+nav .logo h1 {
+	font-size: 25px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(0, 25, 79);
+	font-weight: 700;
+	position: relative;
+}
+
+nav .navigation {
+	list-style: none;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* border: 2px solid black; */
+	/* border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px; */
+	/* background-color: aquamarine; */
+	/* box-shadow: 0 0 3px 3px rgb(85, 85, 85); */
+}
+
+nav .navigation li {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+nav .navigation li a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(0, 25, 79);
+	font-weight: 700;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+nav .logo h1::after,
+nav .navigation li::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 3px;
+	bottom: -3px;
+	left: 0;
+	right: 30px;
+	border-radius: 10px;
+	transition: right 300ms ease-in;
+	background-color: coral;
+}
+
+nav .navigation li::after {
+	right: 100%;
+	bottom: -5px;
+}
+
+nav .navigation li:hover::after {
+	left: 0;
+	right: 0;
+}
+
+nav .gambar {
+	position: fixed;
+	bottom: 30px;
+	left: 50px;
+	width: 45px;
+	height: 45px;
+	padding: 0;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transform: translateY(-2px);
+	box-shadow: 0px 2px 2px 1px #333;
+	transition: box-shadow, transform, 300ms ease;
+}
+
+nav .gambar .cartTotal {
+	position: absolute;
+	top: -3px;
+	right: -5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	background-color: rgba(255, 0, 0, 0.8);
+	color: white;
+	border-radius: 50%;
+	font-size: 12px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+nav .gambar:active,
+nav .gambar:focus {
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+nav .gambar img {
+	background-color: cornsilk;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+======================================

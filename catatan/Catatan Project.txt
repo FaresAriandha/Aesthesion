@@ -1,0 +1,35 @@
+Project WEB
+
+- Navbar (Responsive)
+- Login (Pake punya cdc) --> new page
+- Hero Section (Pake yang dribble)
+- Category (Carousel Show Hide)
+- Shop (Card)
+- Trend Now (Hover Miring tanya sama nabila)
+- Shopping Cart (Tokped) --> new page
+- Details item (Pop Up)
+- Footer
+
+high priority lomba
+- Navbar (Responsive) --> position fixed --> gerry
+- Hero Section (Pake yang dribble) --> 100vw, 100vh (fullscreen) dan yg tengah ke bawah --> gerry dan fares
+- Category (Carousel Show Hide) --> pake tombol prev next --> fares
+- Shop (Card) --> nabila
+- Footer --> fit-content --> nabila
+
+resources gambar --> Freepik --> nabila
+
+folder drive 
+- hero --> men, women, children (Potrait) 3
+- category --> barang yg identik dengan masing" role (men, women, children) (kotak) 3 x 3
+- shop --> banyak gambarnya (kotak) 9
+
+
+warna dasar 
+putih #f5f5f5
+background card --> #d9d9d9
+tombol --> #464646
+navbar --> #333
+sign in --> #636363
+sign up --> putih
+font --> black & white, default Arial

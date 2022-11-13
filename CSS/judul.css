@@ -1,0 +1,24 @@
+ /* judul */
+ .bold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    color: #f0f0f0;
+    font-weight: 700;
+    z-index: -1; 
+}
+@media screen and (max-width: 768px) {
+    .bold {
+        font-size: 60px;
+    } }
+    #inose-work {
+        padding: 10em 0;
+        clear: both;
+        position: relative;
+    }
+        @media screen and (max-width: 768px) {
+            #inose-work {
+            padding: 5em 0;
+        } }

@@ -1,0 +1,899 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #eeeeee;
+}
+
+.sectionProfile {
+	width: 100%;
+	height: fit-content;
+	margin: 20px auto;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	margin-bottom: 100px;
+	/* border: 1px solid red; */
+}
+
+.accentCircle {
+	width: 1200px;
+	height: 1200px;
+	position: fixed;
+	bottom: -800px;
+	right: -200px;
+	border-radius: 50%;
+	background-color: #9593a4;
+	/* background-color: #9ca1b3; */
+	z-index: -999;
+}
+
+/* Style navBox */
+.sectionProfile .navBox {
+	width: 250px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 100px;
+	left: 150px;
+	/* border: 1px solid red; */
+}
+
+.navBox .logo {
+	width: fit-content;
+	height: fit-content;
+	line-height: 18px;
+	margin: 20px 0;
+	/* border: 1px solid green; */
+	text-align: justify;
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo h3 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.navBox .helloSection {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	/* padding: 10px; */
+	box-shadow: 0 5px 3px -3px #929292;
+	/* border: 3px solid black; */
+}
+
+.helloSection .user {
+	margin: 0 0 10px;
+	width: 90%;
+	/* border: 1px solid green; */
+	/* align-items: flex-start; */
+}
+
+.user h2 {
+	font-weight: 500;
+}
+
+.user h2 span {
+	font-weight: 700;
+}
+
+.user .email {
+	margin-top: 5px;
+}
+
+.helloSection .menu {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: fit-content;
+	/* border: 1px solid green; */
+	margin-top: 10px;
+	row-gap: 10px;
+}
+
+.menu a {
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	color: rgb(59, 59, 59);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* border: 1px solid red; */
+	padding: 5px;
+}
+
+.menu a:hover,
+.menu a:active {
+	background-color: #cccccc;
+	border-radius: 10px;
+}
+
+.menu a:hover span {
+	color: black;
+	font-weight: 700;
+}
+
+.menu a:hover img {
+	opacity: 1;
+}
+
+.menu a > * {
+	display: block;
+}
+
+.menu a img {
+	width: 30px;
+	height: 30px;
+	opacity: 0.5;
+}
+
+.menu a span {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+/* ================ */
+/* Style Box Profil */
+/* ================ */
+
+.sectionProfile .boxProfil {
+	/* display: none; */
+	width: 550px;
+	height: fit-content;
+	padding: 10px 20px;
+	padding-bottom: 100px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+	position: relative;
+	top: 100px;
+	right: 100px;
+	box-shadow: 0 5px 5px -3px #929292;
+	overflow: hidden;
+}
+
+.boxProfil .profilUmum {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+
+.boxProfil .savingData {
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 20px;
+	background-color: #9ca1b3;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	cursor: pointer;
+}
+
+.boxProfil .savingData:hover,
+.boxProfil .savingData:active {
+	background-color: #9593a4;
+}
+
+.boxProfil .savingData:active {
+	bottom: 25px;
+}
+
+.profilUmum h3 {
+	width: 100%;
+	font-size: 30px;
+	align-self: flex-start;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	color: rgb(93, 93, 93);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.271);
+}
+
+.profilUmum .imgProfil {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid blue; */
+	margin: 20px 0;
+	margin-bottom: 50px;
+}
+
+.imgProfil img {
+	width: 150px;
+	height: 150px;
+}
+
+.profilUmum .commonInfo {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* border: 1px solid green; */
+	padding: 10px;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin-bottom: 10px;
+}
+
+.commonInfo > * {
+	width: 40%;
+	/* border: 1px solid red; */
+	padding: 10px;
+	background-color: #cfd1da;
+	box-shadow: 0 5px 5px -3px #929292;
+	border-radius: 10px;
+}
+
+.commonInfo > * p {
+	font-size: 16px;
+}
+
+.commonInfo > * label {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 12px;
+	position: relative;
+	font-size: 18px;
+}
+
+.commonInfo > * label::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 3px;
+	background-color: #000000;
+	position: absolute;
+	bottom: -5px;
+	border-radius: 10px;
+}
+
+/* ========================= */
+/* Style Box Profil Lanjutan */
+/* ========================= */
+
+.boxProfil .profilLanjutan {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* padding: 5px 10px; */
+	margin-top: 10px;
+	/* border: 1px solid red; */
+}
+
+.profilLanjutan h3 {
+	width: 100%;
+	/* border: 1px solid green; */
+	margin: 10px;
+	font-size: 25px;
+	opacity: 0.6;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 10px 0;
+}
+
+.profilLanjutan .titleProfilLanjutan {
+	margin-bottom: 30px;
+}
+
+.profilLanjutan .dataDiri {
+	width: 100%;
+	/* border: 1px solid red;s */
+}
+
+/* ============================== */
+/* Section 1 dari Profil Lanjutan */
+/* ============================== */
+
+.dataDiri .inputHeader {
+	width: 100%;
+	/* border: 1px solid orange; */
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	background-color: rgb(215, 215, 215);
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.inputHeader .fillInfo {
+	width: 40%;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.inputHeader .fillInfo .iconArrow img {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 3px;
+	transition: all 0.5s ease;
+}
+
+.inputHeader .fillInfo .iconArrow img.rotate {
+	transform: rotate(180deg);
+}
+
+.fillInfo .fill {
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(235, 209, 209);
+	border: 1px solid red;
+	color: red;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+.inputHeader h3 {
+	padding: 0;
+	font-size: 18px;
+	border-bottom: none;
+	opacity: 1;
+}
+
+/* =================== */
+/* Section 1 Data Diri */
+/* =================== */
+
+.dataDiri section.header {
+	width: 100%;
+	/* border: 1px solid red; */
+	opacity: 0;
+	height: 0;
+	display: none;
+	transition: height 0.3s ease;
+	margin-bottom: 40px;
+}
+
+.dataDiri .header.tampil {
+	opacity: 1;
+	height: fit-content;
+	display: block;
+}
+
+section.header div {
+	width: fit-content;
+}
+
+section.header div > * {
+	display: block;
+	font-size: 16px;
+	margin-left: 20px;
+	/* cursor: pointer; */
+	/* border: 1px solid blue; */
+}
+
+section.header div:not(:last-child) > label {
+	margin: 20px 0 15px;
+	position: relative;
+	font-weight: 600;
+	margin-left: 20px;
+}
+
+section.header div:not(:last-child) > input {
+	outline: none;
+	border: none;
+	padding: 5px 10px 5px 15px;
+	border-radius: 5px;
+	background-color: rgb(235, 235, 235);
+	border: 2px solid rgb(108, 108, 108);
+}
+
+section.header div:not(:last-child) > label::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: -5px;
+}
+
+section.header .religion {
+	/* margin: 20px; */
+	margin: 20px 0;
+}
+
+section.header .religion h4 {
+	margin-bottom: 20px;
+	font-weight: 600;
+	position: relative;
+}
+
+section.header .religion h4::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: -6px;
+}
+
+section.header .religion .inputReligion > input {
+	margin-bottom: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+section.header .religion .inputReligion > * {
+	display: inline-flex;
+	/* border: 1px solid red; */
+}
+section.header .religion .inputReligion > label {
+	position: relative;
+	top: -4px;
+	font-size: 16px;
+}
+
+/* ========================= */
+/* Section 2 Data Pendidikan */
+/* ========================= */
+
+.addDataPendidikan {
+	width: 100%;
+	height: fit-content;
+	/* border: 1px solid black; */
+	box-sizing: border-box;
+	position: relative;
+}
+
+.addDataPendidikan > * {
+	margin-left: 20px;
+}
+
+.addDataPendidikan button.btnAddSchool {
+	display: block;
+	/* border: none; */
+	border: 2px solid #685300;
+	width: fit-content;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+	background-color: #feeb9f;
+	border-radius: 5px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 5px 1px -3px rgb(130, 130, 130);
+	/* transition: all 0.3s; */
+}
+
+.addDataPendidikan button.btnAddSchool:active {
+	box-shadow: none;
+	top: 5px;
+}
+
+.addDataPendidikan .formParent {
+	width: 450px;
+	margin-bottom: 50px;
+	/* border: 1px solid green; */
+	position: relative;
+	/* display: none; */
+}
+
+.addDataPendidikan .formIsian {
+	width: 80%;
+	height: fit-content;
+	display: flex;
+	justify-content: left;
+	gap: 10px;
+	column-gap: 20px;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	/* margin-left: 10px; */
+	/* border: 1px solid red; */
+}
+
+.addDataPendidikan .formIsian > * {
+	display: block;
+	width: 35%;
+	padding: 5px 10px;
+}
+
+.addDataPendidikan select {
+	display: block;
+	border-radius: 5px;
+	width: fit-content;
+	height: 40px;
+	padding: 5px 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.sectionProfile .addDataPendidikan .formParent .formIsian input {
+	/* background-color: #e3e3e3; */
+	background-color: #e3e3e3;
+	border: 1px solid black;
+	font-weight: 500;
+	border-radius: 5px;
+	margin-left: 0;
+}
+
+.addDataPendidikan .formParent .closeBtn img {
+	display: block;
+	position: absolute;
+	right: 50px;
+	bottom: 0;
+	cursor: pointer;
+}
+
+/* ======================================= */
+/* Section 2 Data Kelebihan dan Kekurangan */
+/* ======================================= */
+
+.addDataRiwayat {
+	width: 100%;
+	height: fit-content;
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.addDataRiwayat > * {
+	margin-left: 20px;
+}
+
+.addDataRiwayat .softSkills {
+	width: fit-content;
+	height: fit-content;
+	margin-bottom: 20px;
+}
+
+.addDataRiwayat .softSkills h4.skills {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.addDataRiwayat .softSkills h4.skills::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: -5px;
+	border-radius: 10px;
+}
+
+.addDataRiwayat .softSkills > *:not(h4) {
+	display: inline;
+	cursor: pointer;
+}
+
+.addDataRiwayat .softSkills input {
+	width: 15px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 30px;
+	accent-color: #f9da5c;
+}
+
+.boxProfil .addDataRiwayat .softSkills label {
+	font-size: 14px;
+	position: relative;
+	top: -3px;
+	font-weight: 300;
+}
+
+.addDataRiwayat .softSkills label::before {
+	opacity: 0;
+}
+
+.addDataRiwayat .hardSkillsPlusMinus {
+	width: fit-content;
+	height: fit-content;
+	/* border: 1px solid red; */
+}
+
+.addDataRiwayat .hardSkillsPlusMinus label {
+	margin-bottom: 20px;
+	position: relative;
+	font-weight: 700;
+}
+
+.addDataRiwayat .hardSkillsPlusMinus label::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: -5px;
+	border-radius: 10px;
+}
+.addDataRiwayat .hardSkillsPlusMinus label:not(:first-child) {
+	margin-top: 20px;
+}
+
+.addDataRiwayat .hardSkillsPlusMinus textarea {
+	display: block;
+	width: 300px;
+	height: 50px;
+	padding: 10px 0;
+	border-radius: 10px;
+	padding-left: 20px;
+	font-size: 16px;
+
+	/* border: 2px solid black; */
+}
+
+/* ====================== */
+/* Responsive Breakpoints */
+/* ====================== */
+
+@media (min-width: 1400px) {
+	.sectionProfile .navBox {
+		left: 15%;
+	}
+	.sectionProfile .boxProfil {
+		right: 15%;
+	}
+}
+
+@media (min-width: 1800px) {
+	.sectionProfile .navBox {
+		left: 20%;
+	}
+	.sectionProfile .boxProfil {
+		right: 20%;
+	}
+}
+
+@media (min-width: 2000px) {
+	.sectionProfile .navBox {
+		left: 30%;
+	}
+	.sectionProfile .boxProfil {
+		right: 30%;
+	}
+}
+
+@media (min-width: 2500px) {
+	.sectionProfile .navBox {
+		left: 30%;
+	}
+	.sectionProfile .boxProfil {
+		right: 30%;
+	}
+}
+
+@media (min-width: 4000px) {
+	.sectionProfile .navBox {
+		left: 40%;
+	}
+	.sectionProfile .boxProfil {
+		right: 40%;
+	}
+}
+
+/* Mobile View Breakpoints */
+@media (max-width: 1300px) {
+	.sectionProfile .navBox {
+		left: 5%;
+	}
+	.sectionProfile .boxProfil {
+		width: 55%;
+		right: 5%;
+	}
+}
+
+@media (max-width: 950px) {
+	.sectionProfile .navBox {
+		left: 30px;
+	}
+	.sectionProfile .boxProfil {
+		right: 30px;
+	}
+
+	.menu a img {
+		opacity: 1;
+	}
+	.menu a span {
+		font-weight: 700;
+	}
+	.inputHeader .fillInfo {
+		transform: scale(0.8);
+	}
+
+	.commonInfo > * {
+		width: 60%;
+	}
+}
+
+@media (max-width: 810px) {
+	.sectionProfile {
+		width: 90vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		/* border: 1px solid black; */
+		row-gap: 30px;
+	}
+	.sectionProfile .navBox {
+		position: relative;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		/* border: 1px solid black; */
+	}
+
+	.sectionProfile .navBox .helloSection {
+		width: 100%;
+		box-sizing: border-box;
+		align-items: flex-start;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.menu {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		/* border: 1px solid black; */
+		gap: 0;
+	}
+
+	.menu a {
+		width: 40%;
+		flex-direction: row;
+		/* border: 3px solid black; */
+		height: 30px;
+		border-radius: 10px;
+		background-color: #cfd1da;
+	}
+	.menu a img {
+		width: 30px;
+		height: 30px;
+		opacity: 1;
+		margin: 0 10px;
+	}
+	.menu a span {
+		font-weight: 700;
+	}
+	.inputHeader .fillInfo {
+		transform: scale(0.8);
+		justify-content: space-around;
+		/* border: 1px solid black; */
+	}
+
+	.sectionProfile .boxProfil {
+		position: relative;
+		width: 100%;
+		top: 0;
+		right: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+
+	.profilUmum .commonInfo {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* border: 1px solid black; */
+		/* justify-content: space-around; */
+	}
+	.commonInfo > * {
+		width: 90%;
+	}
+
+	.imgProfil img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.inputHeader .fillInfo {
+		width: 250px;
+	}
+
+	section.header div > * {
+		margin-left: 10px;
+	}
+
+	section.header div:not(:last-child) > label {
+		margin-left: 10px;
+	}
+
+	.addDataPendidikan > * {
+		margin-left: 10px;
+	}
+
+	.addDataRiwayat > * {
+		margin-left: 10px;
+	}
+
+	.addDataRiwayat .hardSkillsPlusMinus textarea {
+		width: 200px;
+	}
+
+	.addDataPendidikan .formParent {
+		width: 100%;
+		/* border: 1px solid green; */
+		/* display: none; */
+		margin-top: 20px;
+	}
+
+	.addDataPendidikan .formIsian > * {
+		display: block;
+		width: 50%;
+		padding: 5px 10px;
+	}
+
+	.addDataPendidikan select {
+		font-size: 13px;
+	}
+
+	.addDataPendidikan select > * {
+		font-size: 12px;
+	}
+	.addDataPendidikan .formParent .closeBtn img {
+		right: 80px;
+	}
+}
+
+@media (max-width: 500px) {
+	.menu a img {
+		width: 25px;
+		height: 25px;
+	}
+	.inputHeader h3 {
+		font-size: 14px;
+	}
+	.inputHeader .fillInfo {
+		transform: scale(0.8);
+		width: 300px;
+		justify-content: space-between;
+		/* border: 1px solid black; */
+	}
+}
+
+@media (max-width: 400px) {
+	.menu a img {
+		width: 25px;
+		height: 25px;
+		margin: 0 5px;
+	}
+	.inputHeader h3 {
+		font-size: 14px;
+	}
+	.inputHeader .fillInfo {
+		width: 310px;
+
+		/* border: 1px solid black; */
+	}
+}

@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.container .boxSection {
+	width: 50%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	/* right: 0; */
+	/* display: none; */
+	transition: all 0.3s ease;
+}
+
+.container .iconRegLog {
+	width: 50%;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8c8c8c;
+	/* transition: all 0.5s ease; */
+}
+
+.container .iconRegLog img {
+	width: 80%;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.container .iconRegLog:hover img {
+	transform: scale(1.2) rotate(-15deg);
+}
+
+.container .iconRegLog:hover {
+	background-color: #545454;
+}
+
+.boxSection .toThePage {
+	align-self: flex-end;
+	position: absolute;
+	right: 30px;
+	top: 40px;
+}
+
+.toThePage a {
+	color: #3e3e3e;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.toThePage a:hover {
+	text-decoration: underline;
+}
+
+.toThePage a:active {
+	color: #272727;
+	/* text-decoration: underline; */
+}
+
+.boxSection .boxLogin,
+.boxSection .boxRegister {
+	width: 50%;
+	/* height: 100vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .boxSection .boxLogin {
+	/* opacity: 0.5; */
+	/* display: none; */
+	position: relative;
+	left: 0;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.container .boxSection .boxRegister {
+	display: none;
+	/* margin: auto; */
+	opacity: 0;
+	position: relative;
+	left: 0;
+	width: 100%;
+	transition: opacity 1s;
+	/* border: 1px solid black; */
+}
+
+.container .iconLogin {
+	background-color: rgb(255, 0, 251);
+}
+.container .iconRegister {
+	background-color: rgb(255, 0, 0);
+}
+
+.info {
+	width: 400px;
+	height: 100px;
+	position: fixed;
+	top: -100px;
+	background-color: aliceblue;
+	border: 3px solid black;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	z-index: 1000;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.info.down {
+	top: 10px;
+	opacity: 1;
+}
+
+.info .gambar {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.info .gambar img {
+	width: 40px;
+	height: 40px;
+}
+
+.info .information {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px;
+	background-color: #ffffff;
+}
+
+.information p {
+	align-self: center;
+	text-align: center;
+	width: 200px;
+	line-height: 20px;
+	margin-top: 10px;
+	/* font-size: 1rem; */
+}
+
+/* =============================== */
+/* ======= Style Login ========*/
+/* =============================== */
+
+.boxLogin .login {
+	width: 400px;
+	height: fit-content;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	align-self: center;
+}
+
+.boxLogin .login h3,
+h1,
+p {
+	align-self: flex-start;
+	line-height: 35px;
+}
+
+.boxLogin .login h3,
+.boxRegister .register h3 {
+	font-size: 30px;
+}
+
+.login p .daftar,
+.register .judul p .btnMasuk {
+	color: #04040482;
+	width: fit-content;
+	height: fit-content;
+	padding: 5px 10px;
+	margin: 0;
+	background-color: rgb(246, 227, 152);
+	border-radius: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	/* box-shadow: 0 5px 3px -2px rgb(169, 169, 169); */
+	box-shadow: none;
+	/* cursor: pointer; */
+	transition: all 0.3s;
+}
+
+.login p .daftar:hover,
+.register .judul p .btnMasuk:hover {
+	color: #040404;
+	background-color: rgb(246, 214, 89);
+}
+
+.inputPass {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+
+.inputPass img {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+/* Login Form */
+
+.login .form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	font-weight: 800;
+	margin-top: 30px;
+}
+
+.login .form input,
+.register .regis-form input {
+	width: 100%;
+	margin-top: 5px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	background-color: none;
+	border-bottom: 1px solid rgb(61, 61, 61, 0.8);
+	background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	/* border: 1px solid green; */
+	/* -webkit-text-fill-color: green; */
+	-webkit-box-shadow: 0 0 0px 1000px transparent inset;
+	background-color: aquamarine;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+.login .form input:focus,
+.register .regis-form input:focus {
+	border-bottom: 1px solid burlywood;
+}
+
+.box label {
+	cursor: pointer;
+}
+.login .form label {
+	position: relative;
+	color: #000000;
+}
+
+.login .form label::before {
+	content: "";
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	background-color: burlywood;
+	bottom: -5px;
+}
+
+.login .form label:nth-child(3) {
+	margin-top: 40px;
+}
+
+/* Login CheckBox */
+
+.login .check {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.check .checkbox-input {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-input input {
+	margin: 0px 8px 0px 4px;
+	cursor: pointer;
+}
+
+.checkbox-input label {
+	cursor: pointer;
+}
+
+.login .check a {
+	text-decoration: none;
+}
+
+.login .check a:hover,
+.login .check a:active {
+	text-decoration: underline;
+}
+
+/* Login Button */
+
+.login button,
+.register button {
+	width: 100%;
+	outline: none;
+	border: none;
+	margin-top: 30px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: #545454;
+	color: white;
+	box-shadow: 0 5px 1px -3px rgb(69, 69, 69);
+	cursor: pointer;
+	position: relative;
+	border-radius: 20px;
+}
+
+.login button:active,
+.register button:active {
+	box-shadow: none;
+	top: 5px;
+}
+
+/* Login With */
+
+.login .login-with,
+.register .register-with {
+	width: 200px;
+	height: auto;
+	margin: auto;
+	/* background-color: beige; */
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.login .login-with {
+	top: 20px;
+}
+
+.login-with span,
+.register-with span {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.login-with .platform,
+.register-with .platform-regis {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	width: 90px;
+	height: fit-content;
+	justify-content: space-between;
+	/* border: 1px solid black; */
+}
+
+.login-with .platform a,
+.regsiter-with .platform-regis a {
+	display: block;
+	width: fit-content;
+	height: fit-content;
+}
+
+.login-with .platform a img,
+.register-with .platform-regis a img {
+	width: 40px;
+	height: 40px;
+	opacity: 0.8;
+}
+
+.login-with .platform a:hover img,
+.register-with .platform-regis a:hover img {
+	opacity: 1;
+}
+
+/* =============================== */
+/* ======= Style Register ========*/
+/* =============================== */
+
+.boxRegister .register {
+	width: 80%;
+	height: 500px;
+	/* border: 1px solid black; */
+}
+
+.register .regis-form {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.register .judul {
+	width: 500px;
+	line-height: 30px;
+	margin: auto;
+	position: relative;
+	align-items: flex-start;
+	position: relative;
+}
+
+.register .regis-form form {
+	width: 500px;
+	height: 60%;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	column-gap: 50px;
+	position: relative;
+	/* border: 1px solid black; */
+}
+.register .regis-form input {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+}
+.register .regis-form label {
+	display: block;
+	position: relative;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #000000;
+}
+
+.register .regis-form form label:not(:first-child) {
+	display: block;
+	margin-top: 10px;
+}
+
+.register .regis-form label::before {
+	content: "";
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	background-color: burlywood;
+	bottom: -5px;
+}
+
+.register .button {
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 10px;
+	align-items: center;
+	align-self: center;
+	position: relative;
+	top: 20px;
+}
+
+.register .button .regis {
+	display: block;
+	height: 35px;
+	width: 100%;
+	margin-top: 0;
+	background-color: #545454;
+	color: rgb(255, 255, 255);
+}
+
+/* .register .masuk {
+	background-color: #1ea3b2;
+	color: rgb(255, 255, 255);
+} */
+
+.register-with span {
+	font-size: 1rem;
+}
+
+/* Resposive Breakpoints */
+
+@media (max-width: 1000px) {
+	.info {
+		width: 90vw;
+		height: 80px;
+	}
+
+	.container .iconRegLog {
+		display: none;
+	}
+
+	.container .boxSection {
+		width: 100vw;
+		/* height: 2000px; */
+		background-color: #ffffff;
+		/* overflow: visible; */
+		/* height: fit-content; */
+	}
+
+	.container .iconLogin,
+	.container .iconRegister {
+		display: none;
+	}
+
+	.boxSection .boxLogin,
+	.boxSection .boxRegister {
+		width: 80vw;
+		height: 70vh;
+		/* border: 1px solid black; */
+	}
+
+	.login .check {
+		font-size: 12px;
+	}
+
+	.login .form {
+		margin-top: 15px;
+	}
+	.login .form input {
+		font-size: 13px;
+	}
+	.login .login-with {
+		width: 100px;
+		position: relative;
+		top: 30px;
+	}
+
+	.login-with span {
+		font-size: 1rem;
+	}
+	.login-with .platform a img {
+		width: 30px;
+		height: 30px;
+		opacity: 0.8;
+	}
+	.register .regis-form form {
+		height: 300px;
+		position: relative;
+		top: -40px;
+	}
+	.register .regis-form input {
+		font-size: 14px;
+		padding: 5px;
+		margin-top: 12px;
+		width: 80vw;
+	}
+
+	.register .judul {
+		width: 80vw;
+		line-height: normal;
+		/* border: 1px solid black; */
+		margin-top: 30px;
+	}
+
+	.register .judul h1 {
+		font-size: 1.5rem;
+	}
+	.register .judul h3 {
+		font-size: 1rem;
+	}
+	.register .judul p {
+		font-size: 0.7rem;
+	}
+	.register .regis-form label {
+		font-size: 14px;
+	}
+	.register .register-with {
+		margin-top: 0;
+	}
+	.register-with .platform-regis a img {
+		width: 30px;
+		height: 30px;
+		opacity: 0.8;
+	}
+	.register-with span {
+		font-size: 0.8rem;
+	}
+	.register .button {
+		width: 60%;
+		position: relative;
+		top: -10px;
+	}
+
+	.register .regis,
+	.register .masuk {
+		width: 100%;
+	}
+
+	.register .judul {
+		top: -50px;
+	}
+}
